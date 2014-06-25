@@ -42,7 +42,7 @@ if (not defined $id) {
 
 # Connect to database
 
-my $dbh = DBI->connect('DBI:mysql:dontkqlm_testdb', '__DBUSERNAME__', '__DBPASSWORD__'
+my $dbh = DBI->connect('DBI:mysql:dontkqlm_productiondb', '__DBUSERNAME__', '__DBPASSWORD__'
 	           ) || err(2, 'Could not connect to database.');
 
 

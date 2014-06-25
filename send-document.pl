@@ -58,7 +58,7 @@ if (not defined $id) {
 
 # Check if email is verified
 
-my $dbh = DBI->connect('DBI:mysql:dontkqlm_testdb', '__DBUSERNAME__', '__DBPASSWORD__'
+my $dbh = DBI->connect('DBI:mysql:dontkqlm_productiondb', '__DBUSERNAME__', '__DBPASSWORD__'
 	           ) || err(2, 'Could not connect to database.');
 
 my $verified = $dbh->do('UPDATE verifiedemails SET usecount=usecount+1 WHERE id=?', undef, $id);
